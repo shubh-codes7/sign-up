@@ -25,6 +25,9 @@ btn.addEventListener("click", (e)=>{
     setTimeout(() => {
         if (confirm("Are you sure you want to submit?")) {
             alert("Successful signup!");
+        }else{
+            document.querySelector("form").reset()
+            err[1].textContent = ''
         }
     }, 0); 
 })
